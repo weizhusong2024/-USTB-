@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const int matrix[2][2] = {{2, 3}, {4, 5}};
 int array_1[1] = {15};
 int array_2[3] = {8, 9, 10};
@@ -93,3 +94,100 @@ int main() {
 
     return result;
 }
+=======
+const int matrix[2][2] = {{2, 3}, {4, 5}};
+int array_1[1] = {15};
+int array_2[3] = {8, 9, 10};
+int globalVar = 1;
+const int CONSTANT_N = 200;
+const int ARRAY_X[3] = {2, 3, 4}, ARRAY_Y[2][2] = {{2, 3}, {4, 5}};
+int uninitializedVar;
+int global = 456;
+int numbers[3] = {7, 8, 9}, matrix2[2][2] = {{2, 3}, {4, 5}};
+
+void printNothing() {
+    printf("this is nothing\n");
+}
+
+void printFirstElement(int arr[]) {
+    printf("%d\n", arr[0]);
+}
+
+void printValue(int arr[]) {
+    printf("%d\n", arr[0]);
+}
+
+void printModSix(int arr[]) {
+    printf("%d\n", arr[0] % 7);
+}
+
+int addNumbers(int x, int y) {
+    return x + y;
+}
+
+void returnNothing() {
+    return;
+}
+
+int main() {
+    {;}
+    int tempVar;
+    tempVar = +-+1;
+    tempVar = -+-1;
+    int num1 = 6;
+    int num2 = 12;
+    int num3 = 18;
+    int num4 = 120;
+    int tempResult;
+
+    tempResult = getint();
+
+    int zero = 0;
+    int result = 0;
+    int wrong = 0;
+
+    const int unusedVar = 300;
+
+    if (num1 + num2 < 25) {
+        if (num2 - num3 > 5) {
+            if (num4 % num3 == 6) {
+                if (num1 / num4 >= 1 && num4 == 0) {
+                    if (num2 / num4 <= 10 || num4 / num2 >= 10) {
+                        if (num4 != 33) {
+                            result = num1 + num2 + num3 * num4;
+                        }
+                    }
+                    else {
+                        result = 321;
+                    }
+                }
+            }
+        }
+    }
+
+    printNothing();
+    printFirstElement(array_1);   // Passing a complete array (array_1) to printFirstElement
+    printFirstElement(array_2);   // Passing a complete array (array_2) to printFirstElement
+
+    addNumbers(3, 5);
+
+    int index = 4;
+    while (index > 0) {
+        index = index - 1;
+        if (index == 2) {
+            continue;
+        }
+        if (index == 3) {
+            break;
+        }
+    }
+
+    if (!num1) {
+        num3 = 888;
+    }
+
+    int finalResult = (num1 + num2) * num3;
+
+    return result;
+}
+>>>>>>> b28ca46fce9fee58e781a2df68b64b37fbc5ae75

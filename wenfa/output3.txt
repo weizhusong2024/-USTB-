@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 result: 4
 15
+=======
+result: 4
+15
+>>>>>>> b28ca46fce9fee58e781a2df68b64b37fbc5ae75
 8

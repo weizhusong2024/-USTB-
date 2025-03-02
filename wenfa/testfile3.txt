@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const int arr1[2][2] = {{2, 3}, {4, 5}};
 int array1[1] = {15};
 int array2[3] = {8, 10, 12};
@@ -109,3 +110,116 @@ int main () {
 
     return 0;
 }
+=======
+const int arr1[2][2] = {{2, 3}, {4, 5}};
+int array1[1] = {15};
+int array2[3] = {8, 10, 12};
+int globalVar = 1;
+const int MAX_NUM = 200;
+const int ARRAY_A[3] = {3, 4, 5}, ARRAY_B[2][2] = {{2, 3}, {4, 5}};
+int uninitialized;
+int global = 150;
+int array3[3] = {7, 8, 9}, array4[2][2] = {{3, 4}, {5, 6}};
+
+void printFirstElement(int arr[]) {
+    printf("%d\n", arr[0]);
+}
+
+void doNothing() {
+    printf("this is nothing dude\n");
+}
+
+int addTwoNumbers(int x, int y) {
+   return x + y;
+}
+
+int getArray(int arr[][2]) {
+   return arr[0][0];
+}
+
+int printArray(int arr[]) {
+   return arr[0];
+}
+
+void printNothing() {
+    return;
+}
+
+int incrementGlobalVar() {
+    globalVar = globalVar + 2;
+    return 1;
+}
+
+int add(int x, int y) {
+    return x + y;
+}
+
+void returnNothing() {
+    return;
+}
+
+int main () {
+    add(3, 4);
+    {;}
+    int q;
+    q = +-+1;
+    q = -+-1;
+    int a = 456;
+    a = 202345;
+    array3[0] = 100;
+    array4[0][0] = 12;
+    int z = array3[0] % array4[0][0];
+    printf("result: %d\n", z);
+
+    int num1 = 6;
+    int num2 = 12;
+    int num3 = 0;
+    int num4 = 4;
+
+    int temp;
+
+    temp = getint();
+
+    if (num2 / num1 > 1 && incrementGlobalVar()) {
+        num3 = 2 * 11;
+        num2 = 5 + num1;
+    }
+    if (num3 % 2 == 0 || num2 % 2 == 0) {
+        num3 = 3 - 15;
+    }
+    if (num1 >= num2) {
+        num4 = 250;
+    }
+    if (num1 <= num3) {
+        num4 = 300;
+    }
+    if (num4 != 231) {
+        num4 = 1500;
+    }
+    else {
+        num4 = 40000;
+    }
+
+    printFirstElement(array1);
+    printFirstElement(array2);
+
+    int index = 4;
+    while (index > 0) {
+        index = index - 1;
+        if (index == 3) {
+            continue;
+        }
+        if (index == 2) {
+            break;
+        }
+    }
+
+    if (!a) {
+        num3 = 888;
+    }
+
+    int result = (a + num2) * num3;
+
+    return 0;
+}
+>>>>>>> b28ca46fce9fee58e781a2df68b64b37fbc5ae75

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const int array1[2][2] = {{2, 4}, {6, 8}};
 int array2[1] = {14};
 int array3[3] = {8, 9, 10};
@@ -107,3 +108,114 @@ int main () {
 
     return 0;
 }
+=======
+const int array1[2][2] = {{2, 4}, {6, 8}};
+int array2[1] = {14};
+int array3[3] = {8, 9, 10};
+int globalVar = 1;
+const int MAX_VAL = 200;
+const int ARRAY1[3] = {2, 3, 4}, ARRAY2[2][2] = {{2, 3}, {4, 5}};
+int uninitialized;
+int global = 150;
+int array4[3] = {5, 6, 7}, array5[2][2] = {{2, 4}, {6, 8}};
+
+void testFunc(int arr[]) {
+    printf("%d\n", arr[0]);
+}
+
+void printNothing() {
+    printf("this is nothing dude\n");
+}
+
+int incrementGlobalVar() {
+    globalVar = globalVar + 2;
+    return 1;
+}
+
+void printFirstElem(int arr[]) {
+    printf("%d\n", arr[0]);
+}
+
+void printModulo(int arr[]) {
+    printf("%d\n", arr[0] % 5);
+}
+
+int addTwo(int x, int y) {
+    return x + y;
+}
+
+void returnNothing() {
+    return;
+}
+
+int main () {
+    addTwo(5, 7);
+    {;}
+    int matrix[2][2] = {{2, 3}, {4, 5}};
+    int array1[1] = {16};
+    int array2[3] = {12, 14, 16};
+
+    const int one = 1;
+    const int matrix2[2][2] = {{3, 5}, {7, 9}};
+
+    // Testing printFirstElem with partial array and complete arrays
+    printFirstElem(matrix[1]);  // Passing a partial array (matrix[1]) to printFirstElem
+    printFirstElem(array1);   // Passing a complete array (array1) to printFirstElem
+    printFirstElem(array2);   // Passing a complete array (array2) to printFirstElem
+
+    // Testing printModulo with partial and complete arrays
+    printModulo(matrix[0]);  // Passing a partial array (matrix[0]) to printModulo
+    printModulo(array1);   // Passing a complete array (array1) to printModulo
+
+    int num1 = 7;
+    int num2 = 14;
+    int num3 = 0;
+    int num4 = 4;
+
+    int temp;
+
+    temp = getint();
+
+    if (num2 / num1 > 1 && incrementGlobalVar()) {
+        num3 = 2 * 11;
+        num2 = 4 + num1;
+    }
+    if (num3 % 2 == 0 || num2 % 2 == 0) {
+        num3 = 1 - 15;
+    }
+    if (num1 >= num2) {
+        num4 = 300;
+    }
+    if (num1 <= num3) {
+        num4 = 250;
+    }
+    if (num4 != 231) {
+        num4 = 1000;
+    }
+    else {
+        num4 = 30000;
+    }
+
+    testFunc(array1);   // Passing a complete array (array1) to printFirstElem
+    testFunc(array2);   // Passing a complete array (array2) to printFirstElem
+
+    int idx = 4;
+    while (idx > 0) {
+        idx = idx - 1;
+        if (idx == 3) {
+            continue;
+        }
+        if (idx == 2) {
+            break;
+        }
+    }
+
+    if (!num1) {
+        num3 = 888;
+    }
+
+    int result = (num1 + num2) * num3;
+
+    return 0;
+}
+>>>>>>> b28ca46fce9fee58e781a2df68b64b37fbc5ae75
