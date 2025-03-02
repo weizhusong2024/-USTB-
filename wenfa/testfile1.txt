@@ -1,0 +1,100 @@
+const int array1[2][2] = {{2, 3}, {4, 5}};
+int array2[1] = {15};
+int array3[3] = {10, 20, 30};
+int globalVar = 0;
+const int MAX = 100;
+const int ARRAY1[3] = {4, 5, 6}, ARRAY2[2][2] = {{7, 8}, {9, 10}};
+int uninitialized;
+int global = 456;
+int array4[3] = {7, 8, 9}, array5[2][2] = {{2, 3}, {4, 5}};
+
+int sampleFunction() {
+    globalVar = globalVar + 1;
+    return 1;
+}
+
+void testFunction(int arr[]) {
+    printf("%d\n", arr[0]);
+}
+
+void unusedFunction() {
+
+}
+
+int addNumbers(int x, int y){
+   return x + y;
+}
+
+int getArray(int arr[][2]){
+   return arr[0][0];
+}
+
+int printArray(int arr[]){
+   return arr[0];
+}
+
+int sumOfTwo(int x, int y) {
+    return x + y;
+}
+
+void noReturn() {
+    return;
+}
+
+int main () {
+    sumOfTwo(7, 8);
+    {;}
+    int var1;
+    var1 = +-+1;
+    var1 = -+-1;
+    int num1 = 6;
+    int num2 = 12;
+    int num3 = 0;
+    int num4 = 9;
+
+    int temp;
+
+    temp = getint();
+
+    if (num2 / num1 > 1 && sampleFunction()) {
+        num3 = 3 * 11;
+        num2 = 4 + num1;
+    }
+    if (num3 % 2 == 0 || num2 % 2 < 0) {
+        num3 = 2 - 11;
+    }
+    if (num1 >= num2) {
+        num4 = 200;
+    }
+    if (num1 <= num3) {
+        num4 = 250;
+    }
+    if (num4 != 231) {
+        num4 = 1234;
+    }
+    else {
+        num4 = 30000;
+    }
+    
+    testFunction(array2);
+    testFunction(array3);
+
+    int idx = 5;
+    while (idx > 0) {
+        idx = idx - 1;
+        if (idx == 3) {
+            continue;
+        }
+        if (idx == 4) {
+            break;
+        }
+    }
+
+    if (!num1) {
+        num3 = 888;
+    }
+
+    int result = (num1 + num2) * num3;
+    
+    return 0;
+}
